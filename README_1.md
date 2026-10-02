@@ -91,27 +91,6 @@ Hệ thống sẽ tự động gộp và nén thành `assets/css/cached.css` và
 
 ---
 
-### Bảng Ánh Xạ Phân Hệ Quản Trị Admin ➔ Vị Trí Hiển Thị Website
-
-| STT | Phân hệ Admin | Đường dẫn trong Admin | Bảng Database liên kết | Vị trí hiển thị trên Web Khách |
-| :---: | :--- | :--- | :--- | :--- |
-| 1 | **Thiết lập thông tin chung** | `index.php?com=setting&act=capnhat` | `table_setting` (`diachi`, `email`, `hotline`, `dienthoai`, `zalo`, `copyright`, `slogan`, `toado_iframe`, `fanpage`) | - **Header:** Tên công ty, Email, Địa chỉ.<br>- **Hero Banner:** Tên công ty, Slogan.<br>- **Mobile Drawer:** Hotline, Email, Địa chỉ.<br>- **Footer:** Hotline, Email, Địa chỉ, Nút Zalo, Nút Fanpage, Bản đồ Google Maps.<br>- **Copyright Bar:** Thông tin bản quyền chân trang. |
-| 2 | **Logo công ty** | `index.php?com=photo&act=photo_static&type=logo` | `table_photo` (`type='logo'`, `act='photo_static'`) | Top Header Logo bên góc trái trên toàn bộ các trang. |
-| 3 | **Favicon** | `index.php?com=photo&act=photo_static&type=favicon` | `table_photo` (`type='favicon'`, `act='photo_static'`) | Icon hiển thị trên Tab trình duyệt (thẻ `<link rel="shortcut icon">`). |
-| 4 | **Hero Banner chính** | `index.php?com=photo&act=photo_static&type=banner` | `table_photo` (`type='banner'`, `act='photo_static'`) | Ảnh nền toàn màn hình của khối Hero Banner đầu trang chủ. |
-| 5 | **CTA Banner** | `index.php?com=photo&act=photo_static&type=background-tuvan` | `table_photo` (`type='background-tuvan'`, `act='photo_static'`) | Ảnh nền khu vực banner kêu gọi báo giá ở cuối trang chủ. |
-| 6 | **Background Footer** | `index.php?com=photo&act=photo_static&type=background-footer` | `table_photo` (`type='background-footer'`, `act='photo_static'`) | Ảnh nền khu vực chân trang (tùy chọn theo cấu hình). |
-| 7 | **Quản lý Đối tác** | `index.php?com=photo&act=man_photo&type=doi-tac` | `table_photo` (`type='doi-tac'`, `hienthi > 0`) | Khối **ĐỐI TÁC** trên trang chủ: Render danh sách logo và link liên kết đối tác từ Admin. |
-| 8 | **Mạng xã hội** | `index.php?com=photo&act=man_photo&type=mxh` | `table_photo` (`type='mxh'`, `hienthi > 0`) | Danh sách icon mạng xã hội tại khu vực Footer. |
-| 9 | **Quản lý Dự án** | `index.php?com=news&act=man&type=du-an` | `table_news` (`type='du-an'`, `hienthi > 0`) | Khối **DỰ ÁN TIÊU BIỂU** trên trang chủ (phân loại nhóm, tên dự án, ảnh công trình) và trang danh sách `/du-an`. |
-| 10 | **Quản lý Dịch vụ** | `index.php?com=news&act=man&type=dich-vu` | `table_news` (`type='dich-vu'`, `hienthi > 0`) | Trang danh mục dịch vụ `/dich-vu` và bài viết chi tiết dịch vụ. |
-| 11 | **Quản lý Tin tức** | `index.php?com=news&act=man&type=tin-tuc` | `table_news` (`type='tin-tuc'`, `hienthi > 0`) | Trang tin tức `/tin-tuc` và bài viết chi tiết tin tức. |
-| 12 | **Quản lý Sản phẩm** | `index.php?com=product&act=man&type=san-pham` | `table_product` (`type='san-pham'`, `hienthi > 0`) | Trang sản phẩm `/san-pham` và chi tiết sản phẩm. |
-| 13 | **Nội dung Giới thiệu** | `index.php?com=static&act=capnhat&type=gioi-thieu` | `table_static` (`type='gioi-thieu'`) | Nội dung chi tiết tại trang `/gioi-thieu` và đoạn mô tả công ty tại Hero Banner trang chủ. |
-| 14 | **Nội dung Liên hệ** | `index.php?com=static&act=capnhat&type=lienhe` | `table_static` (`type='lienhe'`) | Đoạn văn bản giới thiệu phía trên form gửi thư tại trang `/lien-he`. |
-| 15 | **Nội dung Chân trang** | `index.php?com=static&act=capnhat&type=footer` | `table_static` (`type='footer'`) | Nội dung tĩnh bổ sung tại khu vực Footer. |
-
----
 
 ## 4. QUẢN LÝ TỆP TIN VÀ THƯ MỤC HÌNH ẢNH
 
