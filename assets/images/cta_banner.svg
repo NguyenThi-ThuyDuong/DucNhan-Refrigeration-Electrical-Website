@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Dark Blue Gradient -->
+    <linearGradient id="cta-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b456e" />
+      <stop offset="60%" stop-color="#0e5380" />
+      <stop offset="100%" stop-color="#0a3959" />
+    </linearGradient>
+
+    <!-- Industrial Overlay Gradient -->
+    <linearGradient id="overlay-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b456e" stop-opacity="1.0" />
+      <stop offset="45%" stop-color="#0b456e" stop-opacity="0.95" />
+      <stop offset="75%" stop-color="#0e5380" stop-opacity="0.60" />
+      <stop offset="100%" stop-color="#0a3959" stop-opacity="0.30" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Dark Blue Background -->
+  <rect width="1600" height="400" fill="url(#cta-bg)" />
+
+  <!-- Industrial Facility Visuals on Right -->
+  <g transform="translate(850, 0)">
+    <!-- Silos & Industrial Tanks -->
+    <rect x="250" y="50" width="140" height="350" fill="#173449" rx="10" />
+    <ellipse cx="320" cy="50" rx="70" ry="25" fill="#244a66" />
+    
+    <rect x="420" y="80" width="180" height="320" fill="#132c3e" rx="10" />
+    <ellipse cx="510" cy="80" rx="90" ry="30" fill="#1c405a" />
+
+    <!-- Pipes Network -->
+    <path d="M 50 120 L 650 120" stroke="#2c5c80" stroke-width="24" fill="none" stroke-linecap="round" />
+    <path d="M 50 160 L 650 160" stroke="#366b94" stroke-width="18" fill="none" stroke-linecap="round" />
+    <path d="M 50 200 L 650 200" stroke="#1f4460" stroke-width="30" fill="none" stroke-linecap="round" />
+
+    <path d="M 200 0 L 200 400" stroke="#3d75a1" stroke-width="20" fill="none" />
+    <path d="M 380 0 L 380 400" stroke="#254d6b" stroke-width="28" fill="none" />
+
+    <!-- Structural Steel Beams & Girders -->
+    <line x1="0" y1="40" x2="600" y2="350" stroke="#163750" stroke-width="8" />
+    <line x1="100" y1="0" x2="700" y2="380" stroke="#163750" stroke-width="8" />
+
+    <!-- Engineer Silhouette (White Helmet + Blue Jacket) -->
+    <g transform="translate(480, 70)">
+      <!-- Head / White Helmet -->
+      <path d="M 70 60 C 40 60, 35 15, 70 12 C 105 15, 100 60, 70 60 Z" fill="#ffffff" />
+      <path d="M 25 55 L 115 55 C 120 55, 120 65, 115 65 L 25 65 Z" fill="#e0e0e0" />
+      <!-- Safety Glasses / Face Profile -->
+      <path d="M 45 65 Q 40 85 55 100 Q 80 115 95 95 Z" fill="#ffb300" opacity="0.9" />
+
+      <!-- Neck & Vest -->
+      <path d="M 35 100 L 105 100 L 130 330 L 0 330 Z" fill="#0d283c" />
+      <!-- High-Vis Reflective Strips & Blue Jacket -->
+      <path d="M 10 140 L 125 140 L 130 330 L 5 330 Z" fill="#184364" />
+      <path d="M 25 160 L 45 160 L 60 330 L 40 330 Z" fill="#76ff03" />
+      <path d="M 90 160 L 110 160 L 100 330 L 80 330 Z" fill="#76ff03" />
+    </g>
+  </g>
+
+  <!-- Left Gradient Overlay -->
+  <rect width="1200" height="400" fill="url(#overlay-grad)" />
+</svg>

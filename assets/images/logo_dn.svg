@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="60" height="60">
+  <defs>
+    <style>
+      .globe-border { fill: none; stroke: #0e5380; stroke-width: 6; }
+      .globe-grid { fill: none; stroke: #8cb4d2; stroke-width: 2; opacity: 0.8; }
+      .text-d { font-family: 'Arial Black', sans-serif; font-weight: 900; font-size: 64px; fill: #0e5380; }
+      .text-n { font-family: 'Arial Black', sans-serif; font-weight: 900; font-size: 64px; fill: #e53935; }
+      .sub-text { font-family: 'Arial', sans-serif; font-weight: bold; font-size: 14px; fill: #0e5380; letter-spacing: 1px; }
+    </style>
+  </defs>
+  <!-- Outer Ring -->
+  <circle cx="100" cy="100" r="94" class="globe-border" />
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#0e5380" stroke-width="2" />
+  
+  <!-- Globe Grid Lines -->
+  <ellipse cx="100" cy="100" rx="90" ry="40" class="globe-grid" />
+  <ellipse cx="100" cy="100" rx="90" ry="70" class="globe-grid" />
+  <ellipse cx="100" cy="100" rx="40" ry="90" class="globe-grid" />
+  <line x1="10" y1="100" x2="190" y2="100" class="globe-grid" />
+  <line x1="100" y1="10" x2="100" y2="190" class="globe-grid" />
+
+  <!-- Center Text DN -->
+  <g transform="translate(42, 120)">
+    <text class="text-d" x="0" y="0">D</text>
+    <text class="text-n" x="48" y="0">N</text>
+  </g>
+
+  <!-- M&E Banner / Text -->
+  <path id="text-path" d="M 30,155 Q 100,175 170,155" fill="none" />
+  <text font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#e53935" text-anchor="middle">
+    <textPath href="#text-path" startOffset="50%">M &amp; E</textPath>
+  </text>
+</svg>
